@@ -320,12 +320,91 @@
     padding: 0.5rem 0.7rem;
   }
   .news {
+    position: relative;
     margin-top: 20px;
-  }
-  .news p {
-    font-family: "Roboto Mono", monospace;
+    padding: 30px 1.5rem;
     font-size: 24px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .news__slider {
+    margin-top: 80px;
+  }
+  .news__slider__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 8%;
+    top: 25%;
+    font-size: 50px;
+  }
+  .news__slider__buttons div {
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .news__slider__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .news__slider__slide img {
+    width: 367px;
+    height: 184px;
+    margin: 0 10px;
+  }
+  .employers {
+    margin-top: 20px;
+    padding: 30px 1.5rem;
+    background-color: #febf5e;
+  }
+  .employers h6 {
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .employers__text--1 {
+    font-size: 24px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 15px;
+  }
+  .employers__text--2 {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
+  }
+  .employers input {
+    font-family: "Nunito", sans-serif;
+    border: 2px solid black;
+    padding: 15px 40px;
+    margin-top: 15px;
+    display: block;
+    margin: 15px auto 0 auto;
+  }
+  .employers button {
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .employers div {
+    margin-top: 20px;
     text-align: center;
+  }
+  .employers div h6 {
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .employers div p {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
   }
 }
 
@@ -730,6 +809,118 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+  }
+  .news {
+    position: relative;
+    margin-top: 20px;
+    padding: 30px 7rem;
+    font-size: 34px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .news__slider {
+    margin-top: 80px;
+  }
+  .news__slider__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 8%;
+    top: 10%;
+    font-size: 50px;
+  }
+  .news__slider__buttons div {
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .news__slider__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .news__slider__slide img {
+    width: 534px;
+    height: 267px;
+    margin: 0 15px;
+  }
+  .employers {
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 1.5rem;
+    background-color: #febf5e;
+  }
+  .employers h6 {
+    font-size: 28px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .employers__text--1 {
+    font-size: 32px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 15px;
+  }
+  .employers__text--2 {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
+  }
+  .employers__container {
+    position: relative;
+  }
+  .employers__container__button {
+    position: absolute;
+    right: 25%;
+    top: 0;
+  }
+  .employers input {
+    font-family: "Nunito", sans-serif;
+    border: 3px solid black;
+    padding: 15px 40px;
+    margin-top: 15px;
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 50%;
+    height: 40px;
+    font-size: 17px;
+  }
+  .employers button {
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .employers__bootcamp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .employers div {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .employers div h6 {
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .employers div p {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
   }
 }
 

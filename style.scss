@@ -46,7 +46,6 @@ $secondary-font-size: 16px;
 
 .bootcamp__bootcamps div {
   background: linear-gradient(to right, #e9e9fe, #fafbd6);
-
 }
 
 // Tablet Screens
@@ -352,7 +351,6 @@ $secondary-font-size: 16px;
           margin-top: 10px;
           font-size: 14px;
           margin-left: 20px;
-
         }
 
         & button {
@@ -366,11 +364,87 @@ $secondary-font-size: 16px;
   }
 
   .news {
+    position: relative;
     margin-top: 20px;
-    & p {
+    padding: 30px 1.5rem;
+    font-size: 24px;
+    font-family: $main-font;
+
+    &__slider {
+      margin-top: 80px;
+      &__buttons {
+        display: flex;
+        position: absolute;
+        right: 8%;
+        top: 25%;
+        font-size: 50px;
+        & div {
+          margin: 0 20px;
+          cursor: pointer;
+        }
+      }
+      &__slide {
+        display: flex;
+        overflow: hidden;
+        & img {
+          width: 367px;
+          height: 184px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .employers {
+    margin-top: 20px;
+    padding: 30px 1.5rem;
+    background-color: $main-yellow;
+    & h6 {
+      font-size: 16px;
       font-family: $main-font;
+    }
+
+    &__text--1 {
       font-size: 24px;
+      font-family: $main-font;
+      margin-top: 15px;
+    }
+    &__text--2 {
+      font-size: 16px;
+      font-family: $secondary-font;
+      margin-top: 15px;
+    }
+
+    & input {
+      font-family: $secondary-font;
+      border: 2px solid black;
+      padding: 15px 40px;
+      margin-top: 15px;
+      display: block;
+      margin: 15px auto 0 auto;
+    }
+
+    & button {
+      @include mobile-button();
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & div {
+      margin-top: 20px;
       text-align: center;
+      & h6 {
+        font-size: 16px;
+        margin-top: 15px;
+        font-family: $main-font;
+      }
+      & p {
+        font-size: 16px;
+        font-family: $secondary-font;
+        margin-top: 15px;
+      }
     }
   }
 }
@@ -745,7 +819,6 @@ $secondary-font-size: 16px;
           margin-top: 10px;
           font-size: 14px;
           margin-left: 20px;
-
         }
 
         & button {
@@ -754,6 +827,112 @@ $secondary-font-size: 16px;
           margin-right: 20px;
           @include mobile-button();
         }
+      }
+    }
+  }
+
+  .news {
+    position: relative;
+    margin-top: 20px;
+    padding: 30px 7rem;
+    font-size: 34px;
+    font-family: $main-font;
+
+    &__slider {
+      margin-top: 80px;
+      &__buttons {
+        display: flex;
+        position: absolute;
+        right: 8%;
+        top: 10%;
+        font-size: 50px;
+        & div {
+          margin: 0 20px;
+          cursor: pointer;
+        }
+      }
+      &__slide {
+        display: flex;
+        overflow: hidden;
+        & img {
+          width: 534px;
+          height: 267px;
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+
+  .employers {
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 1.5rem;
+    background-color: $main-yellow;
+    & h6 {
+      font-size: 28px;
+      font-family: $main-font;
+    }
+
+    &__text--1 {
+      font-size: 32px;
+      font-family: $main-font;
+      margin-top: 15px;
+    }
+    &__text--2 {
+      font-size: 16px;
+      font-family: $secondary-font;
+      margin-top: 15px;
+    }
+
+    &__container {
+      position: relative;
+      &__button {
+        position: absolute;
+        right: 25%;
+        top: 0;
+      }
+    }
+
+    & input {
+      font-family: $secondary-font;
+      border: 3px solid black;
+      padding: 15px 40px;
+      margin-top: 15px;
+      display: block;
+      margin: 15px auto 0 auto;
+      width: 50%;
+      height: 40px;
+      font-size: 17px;
+    }
+
+    & button {
+      @include mobile-button();
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__bootcamp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    & div {
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      & h6 {
+        font-size: 16px;
+        margin-top: 15px;
+        font-family: $main-font;
+      }
+      & p {
+        font-size: 16px;
+        font-family: $secondary-font;
+        margin-top: 15px;
       }
     }
   }
