@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.header-main {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.intro {
+  background: -webkit-gradient(linear, left top, right top, from(#e9e9fe), to(#fafbd6));
+  background: linear-gradient(to right, #e9e9fe, #fafbd6);
+}
+
+@media (max-width: 1100px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+  .header__hamburger {
+    font-size: 22px;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .header__items {
+    display: none;
+  }
+  .intro {
+    padding: 30px 1.5rem;
+  }
+  .intro__text--main {
+    font-size: 32px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+  }
+  .intro__text--secondary {
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+  .intro__text__button {
+    margin-top: 30px;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+  }
+  .intro__img img {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 7rem;
+    font-family: "Roboto Mono", monospace;
+    margin-top: -15px;
+  }
+  .header img {
+    width: 120px;
+    height: 120px;
+  }
+  .header__hamburger {
+    display: none;
+  }
+  .header a {
+    text-decoration: none;
+    color: black;
+  }
+  .header__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__item {
+    margin: 0 26px;
+    font-size: 1.1rem;
+  }
+  .header__login {
+    padding: 9px 20px;
+    color: white;
+    background-color: #444bff;
+    font-family: "Roboto Mono", monospace;
+  }
+  .intro {
+    padding: 30px 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .intro__text {
+    margin-top: 30px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .intro__text--main {
+    font-size: 45px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+  }
+  .intro__text--secondary {
+    margin-top: 80px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+  .intro__text__button {
+    margin-top: 60px;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.7rem 0.9rem;
+  }
+  .intro__img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .intro__img img {
+    width: 450px;
+    height: 450px;
+    float: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */

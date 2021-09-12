@@ -1,0 +1,144 @@
+@import "variables.scss";
+
+.header-main {
+  position: sticky;
+}
+
+.intro {
+  background: linear-gradient(to right, #e9e9fe, #fafbd6);
+}
+
+// Mobile View
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__hamburger {
+      font-size: 22px;
+      color: white;
+      border: 1px solid $main-blue;
+      background-color: $main-blue;
+      border-radius: 0.2rem;
+      padding: 0.5rem 0.5rem;
+    }
+
+    &__items {
+      display: none;
+    }
+  }
+
+  .intro {
+    padding: 30px 1.5rem;
+
+    &__text {
+      &--main {
+        font-size: 32px;
+        font-family: $main-font;
+        font-weight: 900;
+      }
+      &--secondary {
+        margin-top: 30px;
+        font-size: $secondary-font-size;
+        font-family: $secondary-font;
+      }
+
+      &__button {
+        margin-top: 30px;
+        @include mobile-button();
+      }
+    }
+
+    &__img img {
+      width: 90vw;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7rem;
+    font-family: $main-font;
+    margin-top: -15px;
+
+    & img {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      margin: 0 26px;
+      font-size: 1.1rem;
+    }
+
+    &__login {
+      padding: 9px 20px;
+      color: white;
+      background-color: $main-blue;
+      font-family: $main-font;
+    }
+  }
+
+  .intro {
+    padding: 30px 7rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      //   margin-left: 50px;
+      margin-top: 30px;
+
+      &--main {
+        font-size: 45px;
+        font-family: $main-font;
+        font-weight: 900;
+      }
+      &--secondary {
+        margin-top: 80px;
+        font-size: $secondary-font-size;
+        font-family: $secondary-font;
+      }
+
+      &__button {
+        margin-top: 60px;
+        @include button();
+      }
+      flex: 1;
+    }
+
+    &__img {
+      flex: 1;
+    }
+
+    &__img img {
+      // margin-left: 100px;
+      width: 450px;
+      height: 450px;
+      float: right;
+    }
+  }
+}
