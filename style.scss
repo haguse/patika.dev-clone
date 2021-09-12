@@ -1,4 +1,36 @@
-@import "variables.scss";
+// @import "variables.scss";
+// padding: 30px 1.5rem;
+
+// Roboto Mono Font
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+// Nunino Font
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+$breakpoint-tablet: 1100px;
+$main-blue: #444bff;
+$main-yellow: #febf5e;
+$main-font: "Roboto Mono", monospace;
+$secondary-font: "Nunito", sans-serif;
+$main-font-size: 28px;
+$secondary-font-size: 16px;
+
+@mixin mobile-button {
+  font-size: 13px;
+  font-family: $main-font;
+  color: white;
+  border: 1px solid $main-blue;
+  background-color: $main-blue;
+  padding: 0.5rem 0.7rem;
+}
+
+@mixin button {
+  font-size: 13px;
+  font-family: $main-font;
+  color: white;
+  border: 1px solid $main-blue;
+  background-color: $main-blue;
+  padding: 0.7rem 0.9rem;
+}
 
 .header-main {
   position: sticky;
@@ -8,7 +40,16 @@
   background: linear-gradient(to right, #e9e9fe, #fafbd6);
 }
 
-// Mobile View
+.online-courses--fourth {
+  background: linear-gradient(to right, #e9e9fe, #fafbd6);
+}
+
+.bootcamp__bootcamps div {
+  background: linear-gradient(to right, #e9e9fe, #fafbd6);
+
+}
+
+// Tablet Screens
 @media (max-width: $breakpoint-tablet) {
   .header {
     display: flex;
@@ -60,8 +101,281 @@
       width: 90vw;
     }
   }
+
+  .grad {
+    padding: 30px 1.5rem;
+
+    &__text {
+      font-size: $main-font-size;
+      font-family: $main-font;
+    }
+    &__text--sec {
+      margin-top: 20px;
+      font-size: $secondary-font-size;
+      font-family: $secondary-font;
+    }
+    &__numbers {
+      text-align: center;
+      margin-top: 30px;
+      &--content {
+        font-family: $main-font;
+        font-size: $main-font-size;
+        color: $main-blue;
+        font-weight: 900;
+      }
+
+      & div {
+        margin-top: 30px;
+
+        span {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .brands {
+    padding: 30px 1.5rem;
+
+    & div {
+      display: grid;
+      justify-content: space-around;
+      grid-template-columns: auto auto auto;
+
+      & img {
+        width: 120px;
+        height: 40px;
+        margin: 20px 0;
+        filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+
+  .online-courses {
+    padding: 30px 1.5rem;
+
+    &--first {
+      & h3 {
+        font-family: $main-font;
+        color: $main-yellow;
+      }
+
+      &__tech {
+        text-align: center;
+        font-family: $main-font;
+        font-size: $main-font-size;
+        margin-top: 20px;
+      }
+
+      &__text {
+        font-family: $secondary-font;
+        margin-top: 15px;
+        line-height: 2.4ch;
+      }
+
+      &__quo {
+        color: $main-blue;
+        font-style: italic;
+        font-size: 18px;
+        font-family: $main-font;
+        margin-top: 30px;
+      }
+      &__quop {
+        font-family: $secondary-font;
+        margin-top: 10px;
+      }
+    }
+
+    &--second {
+      margin-top: 20px;
+      text-align: center;
+
+      & button {
+        @include mobile-button();
+        margin-top: 10px;
+      }
+
+      &__free {
+        color: $main-yellow;
+        font-family: $main-font;
+      }
+
+      &__info {
+        font-family: $secondary-font;
+        margin-top: 10px;
+      }
+    }
+
+    &--third {
+      margin-top: 30px;
+      & h5 {
+        text-align: center;
+        font-family: $main-font;
+        font-size: 22px;
+      }
+
+      & div {
+        margin-top: 20px;
+        & p {
+          border: 1px solid $main-yellow;
+          margin: 15px 0;
+          font-size: 16px;
+          font-family: $main-font;
+          padding: 10px 20px;
+
+          &:hover {
+            color: black;
+            background-color: $main-yellow;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &--fourth {
+      font-family: $main-font;
+      border: 3px solid black;
+      padding: 20px 10px;
+      text-align: center;
+
+      &__lesson {
+        text-align: start;
+        padding: 2px 30px;
+        font-size: 16px;
+        margin: 15px 0;
+      }
+
+      & button {
+        margin: 10px 0;
+        @include mobile-button();
+      }
+
+      & h5 {
+        font-size: 24px;
+      }
+
+      &__info {
+        margin-top: 20px;
+        border: 1px solid $main-yellow;
+        padding: 20px 10px;
+        & p {
+          text-align: start;
+          font-size: 15px;
+          margin: 10px 0 0 10px;
+        }
+      }
+    }
+  }
+
+  .bootcamp {
+    padding: 30px 1.5rem;
+
+    &--first {
+      & h3 {
+        font-family: $main-font;
+        color: $main-yellow;
+      }
+
+      &__tech {
+        text-align: center;
+        font-family: $main-font;
+        font-size: $main-font-size;
+        margin-top: 20px;
+      }
+
+      &__text {
+        font-family: $secondary-font;
+        margin-top: 15px;
+        line-height: 2.4ch;
+      }
+
+      &__quo {
+        color: $main-blue;
+        font-style: italic;
+        font-size: 18px;
+        font-family: $main-font;
+        margin-top: 30px;
+      }
+      &__quop {
+        font-family: $secondary-font;
+        margin-top: 10px;
+      }
+    }
+
+    &--second {
+      margin-top: 20px;
+      text-align: center;
+
+      & button {
+        @include mobile-button();
+        margin-top: 10px;
+      }
+
+      &__free {
+        color: $main-yellow;
+        font-family: $main-font;
+      }
+
+      &__info {
+        font-family: $secondary-font;
+        margin-top: 10px;
+      }
+    }
+
+    &__bootcamps {
+      font-family: $secondary-font;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: auto;
+      & div {
+        border: 2px solid black;
+        margin: 20px 0;
+        padding: 10px 0;
+
+        & img {
+          width: 345px;
+          height: 195px;
+          margin-left: 18px;
+        }
+
+        & h6 {
+          margin-top: 10px;
+          font-size: 15px;
+          margin-left: 20px;
+        }
+
+        & p {
+          margin-top: 10px;
+          font-size: 14px;
+          margin-left: 20px;
+
+        }
+
+        & button {
+          margin: 10px 0;
+          float: right;
+          margin-right: 20px;
+          @include mobile-button();
+        }
+      }
+    }
+  }
+
+  .news {
+    margin-top: 20px;
+    & p {
+      font-family: $main-font;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
 }
 
+// Big Screens
 @media (min-width: $breakpoint-tablet) {
   .header {
     display: flex;
@@ -141,4 +455,310 @@
       float: right;
     }
   }
+
+  .grad {
+    padding: 30px 1.5rem;
+    text-align: center;
+
+    &__text {
+      font-size: $main-font-size;
+      font-family: $main-font;
+      font-size: 34px;
+    }
+    &__text--sec {
+      margin-top: 20px;
+      font-size: $secondary-font-size;
+      font-family: $secondary-font;
+    }
+    &__numbers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      &--content {
+        font-family: $main-font;
+        font-size: $main-font-size;
+        color: $main-blue;
+        font-weight: 900;
+      }
+
+      & div {
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        span {
+          margin-top: 10px;
+          font-size: 50px;
+        }
+      }
+    }
+  }
+
+  .brands {
+    padding: 30px 7rem;
+
+    & div {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      grid-template-rows: 2;
+
+      & img {
+        width: 120px;
+        height: 40px;
+        margin: 20px 0;
+        filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+  .online-courses {
+    margin-top: 20px;
+    padding: 30px 7rem;
+
+    &__container {
+      display: flex;
+    }
+
+    &--first {
+      flex: 1;
+      & h3 {
+        font-family: $main-font;
+        color: $main-yellow;
+        font-size: 20px;
+      }
+
+      &__tech {
+        text-align: start;
+        font-family: $main-font;
+        font-size: $main-font-size;
+        margin-top: 34px;
+      }
+
+      &__text {
+        font-family: $secondary-font;
+        margin-top: 15px;
+        line-height: 2.4ch;
+      }
+
+      &__quo {
+        color: $main-blue;
+        font-style: italic;
+        font-size: 18px;
+        font-family: $main-font;
+        margin-top: 30px;
+      }
+      &__quop {
+        font-family: $secondary-font;
+        margin-top: 10px;
+      }
+    }
+
+    &--second {
+      flex: 1;
+      margin-top: 20px;
+      text-align: center;
+
+      & button {
+        @include button();
+        margin-top: 10px;
+      }
+
+      &__free {
+        color: $main-yellow;
+        font-family: $main-font;
+      }
+
+      &__info {
+        font-family: $secondary-font;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 2.4ch;
+      }
+    }
+
+    &--third {
+      margin-top: 30px;
+      & h5 {
+        text-align: center;
+        font-family: $main-font;
+        font-size: 22px;
+      }
+
+      & div {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        & p {
+          border: 2px solid $main-yellow;
+          margin: 15px 10px;
+          font-size: 16px;
+          font-family: $main-font;
+          padding: 10px 20px;
+
+          &:hover {
+            color: black;
+            background-color: $main-yellow;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &--fourth {
+      display: flex;
+      width: 50vw;
+      margin: 0 auto;
+      margin-top: 40px;
+      font-family: $main-font;
+      border: 3px solid black;
+      padding: 20px 10px;
+      text-align: center;
+
+      &__container--first {
+        flex: 1;
+      }
+      &__container--second {
+        flex: 1;
+      }
+
+      &__lesson {
+        text-align: start;
+        padding: 2px 30px;
+        font-size: 16px;
+        margin: 15px 0;
+      }
+
+      & button {
+        margin: 10px 0;
+        @include mobile-button();
+      }
+
+      & h5 {
+        font-size: 24px;
+      }
+
+      &__info {
+        margin-top: 20px;
+        border: 1px solid $main-yellow;
+        padding: 20px 10px;
+        & p {
+          text-align: start;
+          font-size: 15px;
+          margin: 10px 0 0 10px;
+        }
+      }
+    }
+  }
+
+  .bootcamp {
+    margin-top: 20px;
+    padding: 30px 7rem;
+
+    &__container {
+      display: flex;
+    }
+
+    &--first {
+      flex: 1;
+      & h3 {
+        font-family: $main-font;
+        color: $main-yellow;
+        font-size: 20px;
+      }
+
+      &__tech {
+        text-align: start;
+        font-family: $main-font;
+        font-size: $main-font-size;
+        margin-top: 34px;
+      }
+
+      &__text {
+        font-family: $secondary-font;
+        margin-top: 15px;
+        line-height: 2.4ch;
+      }
+
+      &__quo {
+        color: $main-blue;
+        font-style: italic;
+        font-size: 18px;
+        font-family: $main-font;
+        margin-top: 30px;
+      }
+      &__quop {
+        font-family: $secondary-font;
+        margin-top: 10px;
+      }
+    }
+
+    &--second {
+      flex: 1;
+      margin-top: 20px;
+      text-align: center;
+
+      & button {
+        @include button();
+        margin-top: 10px;
+      }
+
+      &__free {
+        color: $main-yellow;
+        font-family: $main-font;
+      }
+
+      &__info {
+        font-family: $secondary-font;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 2.4ch;
+      }
+    }
+
+    &__bootcamps {
+      font-family: $secondary-font;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+
+      & div {
+        border: 2px solid black;
+        margin: 20px 10px;
+        padding: 10px 0;
+
+        & img {
+          width: 345px;
+          height: 195px;
+          margin-left: 16px;
+        }
+
+        & h6 {
+          margin-top: 10px;
+          font-size: 15px;
+          margin-left: 20px;
+        }
+
+        & p {
+          margin-top: 10px;
+          font-size: 14px;
+          margin-left: 20px;
+
+        }
+
+        & button {
+          margin: 10px 0;
+          float: right;
+          margin-right: 20px;
+          @include mobile-button();
+        }
+      }
+    }
+  }
+}
+
+hr {
+  color: $main-yellow;
 }

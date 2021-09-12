@@ -10,6 +10,16 @@
   background: linear-gradient(to right, #e9e9fe, #fafbd6);
 }
 
+.online-courses--fourth {
+  background: -webkit-gradient(linear, left top, right top, from(#e9e9fe), to(#fafbd6));
+  background: linear-gradient(to right, #e9e9fe, #fafbd6);
+}
+
+.bootcamp__bootcamps div {
+  background: -webkit-gradient(linear, left top, right top, from(#e9e9fe), to(#fafbd6));
+  background: linear-gradient(to right, #e9e9fe, #fafbd6);
+}
+
 @media (max-width: 1100px) {
   .header {
     display: -webkit-box;
@@ -62,6 +72,260 @@
   }
   .intro__img img {
     width: 90vw;
+  }
+  .grad {
+    padding: 30px 1.5rem;
+  }
+  .grad__text {
+    font-size: 28px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .grad__text--sec {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+  .grad__numbers {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .grad__numbers--content {
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    color: #444bff;
+    font-weight: 900;
+  }
+  .grad__numbers div {
+    margin-top: 30px;
+  }
+  .grad__numbers div span {
+    display: block;
+    margin-top: 10px;
+  }
+  .brands {
+    padding: 30px 1.5rem;
+  }
+  .brands div {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .brands div img {
+    width: 120px;
+    height: 40px;
+    margin: 20px 0;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  }
+  .brands div img:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .online-courses {
+    padding: 30px 1.5rem;
+  }
+  .online-courses--first h3 {
+    font-family: "Roboto Mono", monospace;
+    color: #febf5e;
+  }
+  .online-courses--first__tech {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .online-courses--first__text {
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
+    line-height: 2.4ch;
+  }
+  .online-courses--first__quo {
+    color: #444bff;
+    font-style: italic;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 30px;
+  }
+  .online-courses--first__quop {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+  }
+  .online-courses--second {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .online-courses--second button {
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+    margin-top: 10px;
+  }
+  .online-courses--second__free {
+    color: #febf5e;
+    font-family: "Roboto Mono", monospace;
+  }
+  .online-courses--second__info {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+  }
+  .online-courses--third {
+    margin-top: 30px;
+  }
+  .online-courses--third h5 {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+  }
+  .online-courses--third div {
+    margin-top: 20px;
+  }
+  .online-courses--third div p {
+    border: 1px solid #febf5e;
+    margin: 15px 0;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    padding: 10px 20px;
+  }
+  .online-courses--third div p:hover {
+    color: black;
+    background-color: #febf5e;
+    cursor: pointer;
+  }
+  .online-courses--fourth {
+    font-family: "Roboto Mono", monospace;
+    border: 3px solid black;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .online-courses--fourth__lesson {
+    text-align: start;
+    padding: 2px 30px;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .online-courses--fourth button {
+    margin: 10px 0;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+  }
+  .online-courses--fourth h5 {
+    font-size: 24px;
+  }
+  .online-courses--fourth__info {
+    margin-top: 20px;
+    border: 1px solid #febf5e;
+    padding: 20px 10px;
+  }
+  .online-courses--fourth__info p {
+    text-align: start;
+    font-size: 15px;
+    margin: 10px 0 0 10px;
+  }
+  .bootcamp {
+    padding: 30px 1.5rem;
+  }
+  .bootcamp--first h3 {
+    font-family: "Roboto Mono", monospace;
+    color: #febf5e;
+  }
+  .bootcamp--first__tech {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .bootcamp--first__text {
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
+    line-height: 2.4ch;
+  }
+  .bootcamp--first__quo {
+    color: #444bff;
+    font-style: italic;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 30px;
+  }
+  .bootcamp--first__quop {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+  }
+  .bootcamp--second {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bootcamp--second button {
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+    margin-top: 10px;
+  }
+  .bootcamp--second__free {
+    color: #febf5e;
+    font-family: "Roboto Mono", monospace;
+  }
+  .bootcamp--second__info {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+  }
+  .bootcamp__bootcamps {
+    font-family: "Nunito", sans-serif;
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .bootcamp__bootcamps div {
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .bootcamp__bootcamps div img {
+    width: 345px;
+    height: 195px;
+    margin-left: 18px;
+  }
+  .bootcamp__bootcamps div h6 {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .bootcamp__bootcamps div p {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .bootcamp__bootcamps div button {
+    margin: 10px 0;
+    float: right;
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+  }
+  .news {
+    margin-top: 20px;
+  }
+  .news p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 24px;
+    text-align: center;
   }
 }
 
@@ -153,5 +417,323 @@
     height: 450px;
     float: right;
   }
+  .grad {
+    padding: 30px 1.5rem;
+    text-align: center;
+  }
+  .grad__text {
+    font-size: 28px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 34px;
+  }
+  .grad__text--sec {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+  .grad__numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .grad__numbers--content {
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    color: #444bff;
+    font-weight: 900;
+  }
+  .grad__numbers div {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .grad__numbers div span {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+  .brands {
+    padding: 30px 7rem;
+  }
+  .brands div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+  }
+  .brands div img {
+    width: 120px;
+    height: 40px;
+    margin: 20px 0;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  }
+  .brands div img:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .online-courses {
+    margin-top: 20px;
+    padding: 30px 7rem;
+  }
+  .online-courses__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .online-courses--first {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .online-courses--first h3 {
+    font-family: "Roboto Mono", monospace;
+    color: #febf5e;
+    font-size: 20px;
+  }
+  .online-courses--first__tech {
+    text-align: start;
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    margin-top: 34px;
+  }
+  .online-courses--first__text {
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
+    line-height: 2.4ch;
+  }
+  .online-courses--first__quo {
+    color: #444bff;
+    font-style: italic;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 30px;
+  }
+  .online-courses--first__quop {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+  }
+  .online-courses--second {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .online-courses--second button {
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.7rem 0.9rem;
+    margin-top: 10px;
+  }
+  .online-courses--second__free {
+    color: #febf5e;
+    font-family: "Roboto Mono", monospace;
+  }
+  .online-courses--second__info {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 2.4ch;
+  }
+  .online-courses--third {
+    margin-top: 30px;
+  }
+  .online-courses--third h5 {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+  }
+  .online-courses--third div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .online-courses--third div p {
+    border: 2px solid #febf5e;
+    margin: 15px 10px;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    padding: 10px 20px;
+  }
+  .online-courses--third div p:hover {
+    color: black;
+    background-color: #febf5e;
+    cursor: pointer;
+  }
+  .online-courses--fourth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: "Roboto Mono", monospace;
+    border: 3px solid black;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .online-courses--fourth__container--first {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .online-courses--fourth__container--second {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .online-courses--fourth__lesson {
+    text-align: start;
+    padding: 2px 30px;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .online-courses--fourth button {
+    margin: 10px 0;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+  }
+  .online-courses--fourth h5 {
+    font-size: 24px;
+  }
+  .online-courses--fourth__info {
+    margin-top: 20px;
+    border: 1px solid #febf5e;
+    padding: 20px 10px;
+  }
+  .online-courses--fourth__info p {
+    text-align: start;
+    font-size: 15px;
+    margin: 10px 0 0 10px;
+  }
+  .bootcamp {
+    margin-top: 20px;
+    padding: 30px 7rem;
+  }
+  .bootcamp__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bootcamp--first {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .bootcamp--first h3 {
+    font-family: "Roboto Mono", monospace;
+    color: #febf5e;
+    font-size: 20px;
+  }
+  .bootcamp--first__tech {
+    text-align: start;
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    margin-top: 34px;
+  }
+  .bootcamp--first__text {
+    font-family: "Nunito", sans-serif;
+    margin-top: 15px;
+    line-height: 2.4ch;
+  }
+  .bootcamp--first__quo {
+    color: #444bff;
+    font-style: italic;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 30px;
+  }
+  .bootcamp--first__quop {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+  }
+  .bootcamp--second {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bootcamp--second button {
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.7rem 0.9rem;
+    margin-top: 10px;
+  }
+  .bootcamp--second__free {
+    color: #febf5e;
+    font-family: "Roboto Mono", monospace;
+  }
+  .bootcamp--second__info {
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 2.4ch;
+  }
+  .bootcamp__bootcamps {
+    font-family: "Nunito", sans-serif;
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .bootcamp__bootcamps div {
+    border: 2px solid black;
+    margin: 20px 10px;
+    padding: 10px 0;
+  }
+  .bootcamp__bootcamps div img {
+    width: 345px;
+    height: 195px;
+    margin-left: 16px;
+  }
+  .bootcamp__bootcamps div h6 {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .bootcamp__bootcamps div p {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .bootcamp__bootcamps div button {
+    margin: 10px 0;
+    float: right;
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+hr {
+  color: #febf5e;
 }
 /*# sourceMappingURL=style.css.map */

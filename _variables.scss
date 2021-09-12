@@ -6,6 +6,7 @@
 
 $breakpoint-tablet: 1100px;
 $main-blue: #444bff;
+$main-yellow: #FEBF5E;
 $main-font: "Roboto Mono", monospace;
 $secondary-font: "Nunito", sans-serif;
 $main-font-size: 28px;
@@ -18,6 +19,7 @@ $secondary-font-size: 16px;
   border: 1px solid $main-blue;
   background-color: $main-blue;
   padding: 0.5rem 0.7rem;
+  cursor: pointer;
 }
 
 @mixin button {
@@ -27,4 +29,5 @@ $secondary-font-size: 16px;
   border: 1px solid $main-blue;
   background-color: $main-blue;
   padding: 0.7rem 0.9rem;
+  cursor: pointer;
 }
