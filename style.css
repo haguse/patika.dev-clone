@@ -20,6 +20,15 @@
   background: linear-gradient(to right, #e9e9fe, #fafbd6);
 }
 
+@media (min-width: 636px) and (max-width: 1100px) {
+  .bootcamp__bootcamps {
+    -ms-grid-columns: auto auto !important;
+        grid-template-columns: auto auto !important;
+    -webkit-column-gap: 10px !important;
+            column-gap: 10px !important;
+  }
+}
+
 @media (max-width: 1100px) {
   .header {
     display: -webkit-box;
@@ -69,6 +78,7 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
   }
   .intro__img img {
     width: 90vw;
@@ -128,7 +138,7 @@
   }
   .online-courses--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #febf5e;
+    color: #FEBF5E;
   }
   .online-courses--first__tech {
     text-align: center;
@@ -163,10 +173,11 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
     margin-top: 10px;
   }
   .online-courses--second__free {
-    color: #febf5e;
+    color: #FEBF5E;
     font-family: "Roboto Mono", monospace;
   }
   .online-courses--second__info {
@@ -185,7 +196,7 @@
     margin-top: 20px;
   }
   .online-courses--third div p {
-    border: 1px solid #febf5e;
+    border: 1px solid #FEBF5E;
     margin: 15px 0;
     font-size: 16px;
     font-family: "Roboto Mono", monospace;
@@ -193,7 +204,7 @@
   }
   .online-courses--third div p:hover {
     color: black;
-    background-color: #febf5e;
+    background-color: #FEBF5E;
     cursor: pointer;
   }
   .online-courses--fourth {
@@ -216,13 +227,14 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
   }
   .online-courses--fourth h5 {
     font-size: 24px;
   }
   .online-courses--fourth__info {
     margin-top: 20px;
-    border: 1px solid #febf5e;
+    border: 1px solid #FEBF5E;
     padding: 20px 10px;
   }
   .online-courses--fourth__info p {
@@ -235,7 +247,7 @@
   }
   .bootcamp--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #febf5e;
+    color: #FEBF5E;
   }
   .bootcamp--first__tech {
     text-align: center;
@@ -270,10 +282,11 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
     margin-top: 10px;
   }
   .bootcamp--second__free {
-    color: #febf5e;
+    color: #FEBF5E;
     font-family: "Roboto Mono", monospace;
   }
   .bootcamp--second__info {
@@ -294,9 +307,10 @@
     padding: 10px 0;
   }
   .bootcamp__bootcamps div img {
-    width: 345px;
+    width: 80%;
     height: 195px;
-    margin-left: 18px;
+    display: block;
+    margin: auto;
   }
   .bootcamp__bootcamps div h6 {
     margin-top: 10px;
@@ -318,6 +332,7 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
   }
   .news {
     position: relative;
@@ -356,7 +371,7 @@
   .employers {
     margin-top: 20px;
     padding: 30px 1.5rem;
-    background-color: #febf5e;
+    background-color: #FEBF5E;
   }
   .employers h6 {
     font-size: 16px;
@@ -387,6 +402,7 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
     margin-top: 20px;
     display: block;
     margin-left: auto;
@@ -405,6 +421,57 @@
     font-size: 16px;
     font-family: "Nunito", sans-serif;
     margin-top: 15px;
+  }
+  .footer {
+    color: white;
+    padding: 30px 1.5rem;
+    background-color: #444bff;
+  }
+  .footer button {
+    display: block;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    color: #444bff;
+    background-color: white;
+    border: 3px solid black;
+    margin-top: 15px;
+  }
+  .footer h6 {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+  }
+  .footer__pages {
+    margin-top: 30px;
+  }
+  .footer__pages p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .footer__pages__title {
+    font-family: "Roboto Mono", monospace !important;
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .footer__social i {
+    font-size: 25px;
+    color: #FEBF5E;
+    margin: 0 10px;
+  }
+  .footer__social p {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .footer__social__info {
+    display: none;
+  }
+  .footer__info {
+    margin-top: 20px;
   }
 }
 
@@ -485,6 +552,7 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.7rem 0.9rem;
+    cursor: pointer;
   }
   .intro__img {
     -webkit-box-flex: 1;
@@ -574,7 +642,7 @@
   }
   .online-courses--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #febf5e;
+    color: #FEBF5E;
     font-size: 20px;
   }
   .online-courses--first__tech {
@@ -613,10 +681,11 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.7rem 0.9rem;
+    cursor: pointer;
     margin-top: 10px;
   }
   .online-courses--second__free {
-    color: #febf5e;
+    color: #FEBF5E;
     font-family: "Roboto Mono", monospace;
   }
   .online-courses--second__info {
@@ -643,7 +712,7 @@
             justify-content: center;
   }
   .online-courses--third div p {
-    border: 2px solid #febf5e;
+    border: 2px solid #FEBF5E;
     margin: 15px 10px;
     font-size: 16px;
     font-family: "Roboto Mono", monospace;
@@ -651,7 +720,7 @@
   }
   .online-courses--third div p:hover {
     color: black;
-    background-color: #febf5e;
+    background-color: #FEBF5E;
     cursor: pointer;
   }
   .online-courses--fourth {
@@ -690,13 +759,14 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
   }
   .online-courses--fourth h5 {
     font-size: 24px;
   }
   .online-courses--fourth__info {
     margin-top: 20px;
-    border: 1px solid #febf5e;
+    border: 1px solid #FEBF5E;
     padding: 20px 10px;
   }
   .online-courses--fourth__info p {
@@ -720,7 +790,7 @@
   }
   .bootcamp--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #febf5e;
+    color: #FEBF5E;
     font-size: 20px;
   }
   .bootcamp--first__tech {
@@ -759,10 +829,11 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.7rem 0.9rem;
+    cursor: pointer;
     margin-top: 10px;
   }
   .bootcamp--second__free {
-    color: #febf5e;
+    color: #FEBF5E;
     font-family: "Roboto Mono", monospace;
   }
   .bootcamp--second__info {
@@ -785,9 +856,10 @@
     padding: 10px 0;
   }
   .bootcamp__bootcamps div img {
-    width: 345px;
+    width: 80%;
     height: 195px;
-    margin-left: 16px;
+    display: block;
+    margin: auto;
   }
   .bootcamp__bootcamps div h6 {
     margin-top: 10px;
@@ -809,6 +881,7 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
   }
   .news {
     position: relative;
@@ -848,7 +921,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 30px 1.5rem;
-    background-color: #febf5e;
+    background-color: #FEBF5E;
   }
   .employers h6 {
     font-size: 28px;
@@ -890,6 +963,7 @@
     border: 1px solid #444bff;
     background-color: #444bff;
     padding: 0.5rem 0.7rem;
+    cursor: pointer;
     margin-top: 20px;
     display: block;
     margin-left: auto;
@@ -922,9 +996,108 @@
     font-family: "Nunito", sans-serif;
     margin-top: 15px;
   }
+  .footer {
+    color: white;
+    padding: 30px 7rem;
+    background-color: #444bff;
+  }
+  .footer button {
+    display: block;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    border: 1px solid #444bff;
+    background-color: #444bff;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    color: #444bff;
+    background-color: white;
+    border: 3px solid black;
+    margin-top: 15px;
+  }
+  .footer__container {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .footer__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__buttons button {
+    margin: 0 10px;
+  }
+  .footer h6 {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+  }
+  .footer__pages {
+    margin-top: 30px;
+  }
+  .footer__pages p {
+    font-family: "Nunito", sans-serif;
+    margin: 10px 0;
+  }
+  .footer__pages__info {
+    margin-bottom: 10px;
+    display: none;
+    cursor: pointer;
+  }
+  .footer__pages__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    font-size: 15px !important;
+    cursor: pointer;
+  }
+  .footer__pages__title {
+    font-family: "Roboto Mono", monospace !important;
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__social {
+    margin-right: 100px;
+  }
+  .footer__social i {
+    font-size: 25px;
+    color: #FEBF5E;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .footer__social p {
+    margin-top: 20px;
+  }
+  .footer__social__info {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  .footer__info {
+    text-align: center;
+  }
 }
 
 hr {
-  color: #febf5e;
+  margin-top: 30px;
+  color: #FEBF5E;
 }
 /*# sourceMappingURL=style.css.map */

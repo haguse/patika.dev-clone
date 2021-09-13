@@ -1,36 +1,4 @@
-// @import "variables.scss";
-// padding: 30px 1.5rem;
-
-// Roboto Mono Font
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-// Nunino Font
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
-$breakpoint-tablet: 1100px;
-$main-blue: #444bff;
-$main-yellow: #febf5e;
-$main-font: "Roboto Mono", monospace;
-$secondary-font: "Nunito", sans-serif;
-$main-font-size: 28px;
-$secondary-font-size: 16px;
-
-@mixin mobile-button {
-  font-size: 13px;
-  font-family: $main-font;
-  color: white;
-  border: 1px solid $main-blue;
-  background-color: $main-blue;
-  padding: 0.5rem 0.7rem;
-}
-
-@mixin button {
-  font-size: 13px;
-  font-family: $main-font;
-  color: white;
-  border: 1px solid $main-blue;
-  background-color: $main-blue;
-  padding: 0.7rem 0.9rem;
-}
+@import "variables.scss";
 
 .header-main {
   position: sticky;
@@ -46,6 +14,14 @@ $secondary-font-size: 16px;
 
 .bootcamp__bootcamps div {
   background: linear-gradient(to right, #e9e9fe, #fafbd6);
+}
+
+// Grid Cards For Medium Screens
+@media (min-width: 636px) and (max-width: 1100px) {
+  .bootcamp__bootcamps {
+    grid-template-columns: auto auto !important;
+    column-gap: 10px !important;
+  }
 }
 
 // Tablet Screens
@@ -336,9 +312,10 @@ $secondary-font-size: 16px;
         padding: 10px 0;
 
         & img {
-          width: 345px;
+          width: 80%;
           height: 195px;
-          margin-left: 18px;
+          display: block;
+          margin: auto;
         }
 
         & h6 {
@@ -445,6 +422,61 @@ $secondary-font-size: 16px;
         font-family: $secondary-font;
         margin-top: 15px;
       }
+    }
+  }
+
+  .footer {
+    color: white;
+    padding: 30px 1.5rem;
+    background-color: $main-blue;
+    & button {
+      display: block;
+      @include mobile-button();
+      color: $main-blue;
+      background-color: white;
+      border: 3px solid black;
+      margin-top: 15px;
+    }
+
+    & h6 {
+      font-family: $secondary-font;
+      font-size: 15px;
+    }
+
+    &__pages {
+      margin-top: 30px;
+      & p {
+        font-family: $secondary-font;
+        font-size: 16px;
+        margin: 20px 0;
+      }
+
+      &__title {
+        font-family: $main-font !important;
+        font-size: 17px;
+        font-weight: 200;
+      }
+    }
+
+    &__social {
+      & i {
+        font-size: 25px;
+        color: $main-yellow;
+        margin: 0 10px;
+      }
+
+      & p {
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      &__info {
+        display: none;
+      }
+    }
+
+    &__info {
+      margin-top: 20px;
     }
   }
 }
@@ -804,9 +836,10 @@ $secondary-font-size: 16px;
         padding: 10px 0;
 
         & img {
-          width: 345px;
+          width: 80%;
           height: 195px;
-          margin-left: 16px;
+          display: block;
+          margin: auto;
         }
 
         & h6 {
@@ -936,8 +969,100 @@ $secondary-font-size: 16px;
       }
     }
   }
+
+  .footer {
+    color: white;
+    padding: 30px 7rem;
+    background-color: $main-blue;
+    & button {
+      display: block;
+      @include mobile-button();
+      color: $main-blue;
+      background-color: white;
+      border: 3px solid black;
+      margin-top: 15px;
+    }
+
+    &__container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    &__buttons {
+      display: flex;
+      & button {
+        margin: 0 10px;
+      }
+    }
+
+    & h6 {
+      font-family: $secondary-font;
+      font-size: 15px;
+    }
+
+    &__pages {
+      margin-top: 30px;
+      & p {
+        font-family: $secondary-font;
+        // font-size: 16px;
+        margin: 10px 0;
+      }
+
+      &__info {
+        margin-bottom: 10px;
+        display: none;
+        cursor: pointer;
+      }
+
+      &__items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        font-size: 15px !important;
+        cursor: pointer;
+      }
+
+      &__title {
+        font-family: $main-font !important;
+        font-size: 17px;
+        font-weight: 200;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__social {
+      margin-right: 100px;
+      & i {
+        font-size: 25px;
+        color: $main-yellow;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      & p {
+        margin-top: 20px;
+      }
+      &__info {
+        font-family: $secondary-font;
+        margin-bottom: 20px;
+        margin-left: 15px;
+      }
+    }
+
+    &__info {
+      text-align: center;
+    }
+  }
 }
 
 hr {
+  margin-top: 30px;
   color: $main-yellow;
 }
