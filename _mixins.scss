@@ -1,0 +1,19 @@
+@mixin mobile-button {
+  font-size: 13px;
+  font-family: $main-font;
+  color: white;
+  border: 1px solid $main-blue;
+  background-color: $main-blue;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+@mixin button {
+  font-size: 13px;
+  font-family: $main-font;
+  color: white;
+  border: 1px solid $main-blue;
+  background-color: $main-blue;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+}

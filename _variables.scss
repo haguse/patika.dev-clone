@@ -3,31 +3,10 @@
 // Nunino Font
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-
 $breakpoint-tablet: 1100px;
 $main-blue: #444bff;
-$main-yellow: #FEBF5E;
+$main-yellow: #febf5e;
 $main-font: "Roboto Mono", monospace;
 $secondary-font: "Nunito", sans-serif;
 $main-font-size: 28px;
 $secondary-font-size: 16px;
-
-@mixin mobile-button {
-  font-size: 13px;
-  font-family: $main-font;
-  color: white;
-  border: 1px solid $main-blue;
-  background-color: $main-blue;
-  padding: 0.5rem 0.7rem;
-  cursor: pointer;
-}
-
-@mixin button {
-  font-size: 13px;
-  font-family: $main-font;
-  color: white;
-  border: 1px solid $main-blue;
-  background-color: $main-blue;
-  padding: 0.7rem 0.9rem;
-  cursor: pointer;
-}

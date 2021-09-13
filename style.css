@@ -138,7 +138,7 @@
   }
   .online-courses--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #FEBF5E;
+    color: #febf5e;
   }
   .online-courses--first__tech {
     text-align: center;
@@ -177,7 +177,7 @@
     margin-top: 10px;
   }
   .online-courses--second__free {
-    color: #FEBF5E;
+    color: #febf5e;
     font-family: "Roboto Mono", monospace;
   }
   .online-courses--second__info {
@@ -196,7 +196,7 @@
     margin-top: 20px;
   }
   .online-courses--third div p {
-    border: 1px solid #FEBF5E;
+    border: 1px solid #febf5e;
     margin: 15px 0;
     font-size: 16px;
     font-family: "Roboto Mono", monospace;
@@ -204,7 +204,7 @@
   }
   .online-courses--third div p:hover {
     color: black;
-    background-color: #FEBF5E;
+    background-color: #febf5e;
     cursor: pointer;
   }
   .online-courses--fourth {
@@ -234,7 +234,7 @@
   }
   .online-courses--fourth__info {
     margin-top: 20px;
-    border: 1px solid #FEBF5E;
+    border: 1px solid #febf5e;
     padding: 20px 10px;
   }
   .online-courses--fourth__info p {
@@ -247,7 +247,7 @@
   }
   .bootcamp--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #FEBF5E;
+    color: #febf5e;
   }
   .bootcamp--first__tech {
     text-align: center;
@@ -286,7 +286,7 @@
     margin-top: 10px;
   }
   .bootcamp--second__free {
-    color: #FEBF5E;
+    color: #febf5e;
     font-family: "Roboto Mono", monospace;
   }
   .bootcamp--second__info {
@@ -371,7 +371,7 @@
   .employers {
     margin-top: 20px;
     padding: 30px 1.5rem;
-    background-color: #FEBF5E;
+    background-color: #febf5e;
   }
   .employers h6 {
     font-size: 16px;
@@ -460,7 +460,7 @@
   }
   .footer__social i {
     font-size: 25px;
-    color: #FEBF5E;
+    color: #febf5e;
     margin: 0 10px;
   }
   .footer__social p {
@@ -642,7 +642,7 @@
   }
   .online-courses--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #FEBF5E;
+    color: #febf5e;
     font-size: 20px;
   }
   .online-courses--first__tech {
@@ -685,7 +685,7 @@
     margin-top: 10px;
   }
   .online-courses--second__free {
-    color: #FEBF5E;
+    color: #febf5e;
     font-family: "Roboto Mono", monospace;
   }
   .online-courses--second__info {
@@ -712,7 +712,7 @@
             justify-content: center;
   }
   .online-courses--third div p {
-    border: 2px solid #FEBF5E;
+    border: 2px solid #febf5e;
     margin: 15px 10px;
     font-size: 16px;
     font-family: "Roboto Mono", monospace;
@@ -720,7 +720,7 @@
   }
   .online-courses--third div p:hover {
     color: black;
-    background-color: #FEBF5E;
+    background-color: #febf5e;
     cursor: pointer;
   }
   .online-courses--fourth {
@@ -766,7 +766,7 @@
   }
   .online-courses--fourth__info {
     margin-top: 20px;
-    border: 1px solid #FEBF5E;
+    border: 1px solid #febf5e;
     padding: 20px 10px;
   }
   .online-courses--fourth__info p {
@@ -790,7 +790,7 @@
   }
   .bootcamp--first h3 {
     font-family: "Roboto Mono", monospace;
-    color: #FEBF5E;
+    color: #febf5e;
     font-size: 20px;
   }
   .bootcamp--first__tech {
@@ -833,7 +833,7 @@
     margin-top: 10px;
   }
   .bootcamp--second__free {
-    color: #FEBF5E;
+    color: #febf5e;
     font-family: "Roboto Mono", monospace;
   }
   .bootcamp--second__info {
@@ -921,7 +921,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 30px 1.5rem;
-    background-color: #FEBF5E;
+    background-color: #febf5e;
   }
   .employers h6 {
     font-size: 28px;
@@ -1079,7 +1079,7 @@
   }
   .footer__social i {
     font-size: 25px;
-    color: #FEBF5E;
+    color: #febf5e;
     margin: 0 10px;
     cursor: pointer;
   }
@@ -1098,6 +1098,6 @@
 
 hr {
   margin-top: 30px;
-  color: #FEBF5E;
+  color: #febf5e;
 }
 /*# sourceMappingURL=style.css.map */
